@@ -50,3 +50,7 @@
 - 수학 과목 결과
 
 ![mathgrade](https://user-images.githubusercontent.com/53508659/120093876-0b8ced00-c158-11eb-93a4-9218dc2039ad.PNG)
+
+## 관계도 그리기
+![diagram](https://user-images.githubusercontent.com/53508659/120093906-39723180-c158-11eb-9bbc-0d9b63385b2b.PNG)
+
