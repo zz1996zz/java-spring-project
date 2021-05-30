@@ -63,7 +63,7 @@
 
 ![evaluation](https://user-images.githubusercontent.com/53508659/120104056-9f2ce080-c18d-11eb-8c64-632b25be2dc5.PNG)
 
-## 리포트 클래스(Builder Pattern을 활용)
+## 리포트 클래스(Builder Pattern을 활용) - Singleton Pattern
 
 * 학점 평가에 대한 클래스들을 인스턴스화하고 이에 대한 배열을 만들어 각 과목에 점수를 산정할 때  
   필수 과목인지 일반 과목인지에 따라 각 정책 클래스가 학점을 평가할 수 있도록 구현 합니다.
@@ -74,3 +74,10 @@
 ## 프로그램 테스트 하기
 * 주어진 데이터에 기반하여 Student, Subject, Score 객체를 직접 만들어 각 과목에 따른 학점의 결과가 잘 출력되는지 확인합니다.
 * 모든 학생과 과목을 관리하는 School 객체를 만듭니다.
+
+## 프로그램 업그레이드 하기
+* 과목과 학점 정책이 추가되는 경우
+방송댄스 과목이 새로 개설되고 이 과목의 학점 평가 정책은 pass/fail로 정해졌다고 합니다.  
+70점 이상인 경우는 pass, 미만인 경우는 fail입니다.
+
+![dancegrade](https://user-images.githubusercontent.com/53508659/120105608-9b508c80-c194-11eb-9610-8fecae92f28b.PNG)
