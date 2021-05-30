@@ -12,7 +12,7 @@ public class Subject {
 	
 	private ArrayList<Student> studentList = new ArrayList<>();
 
-	public Subject(int subjectId, String subjectName) {
+	public Subject(String subjectName, int subjectId) {
 		this.subjectId = subjectId;
 		this.subjectName = subjectName;
 		this.gradeType = Define.AB_TYPE;
