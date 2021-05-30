@@ -45,8 +45,8 @@
 
 - 국어 과목 결과
 
-![koreangrade](./img/koreangrade.png)
+![koreangrade](https://user-images.githubusercontent.com/53508659/120093869-fc0da400-c157-11eb-83e8-8801dcd9ece0.PNG)
 
 - 수학 과목 결과
 
-![mathgrade](./img/mathgrade.png)
+![mathgrade](https://user-images.githubusercontent.com/53508659/120093876-0b8ced00-c158-11eb-93a4-9218dc2039ad.PNG)
