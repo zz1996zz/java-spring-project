@@ -28,4 +28,7 @@
 |GET|/|전체 todo 리스트 조회|-|{<br>&nbsp;&nbsp;&nbsp;"id":1,<br>&nbsp;&nbsp;&nbsp;"title":"자바기초 공부하기",<br>&nbsp;&nbsp;&nbsp;"order":0,<br>&nbsp;&nbsp;&nbsp;"completed":false,<br>&nbsp;&nbsp;&nbsp;"url":"http://localhost:8080/1"<br>},<br>{<br>&nbsp;&nbsp;&nbsp;"id":2,<br>&nbsp;&nbsp;&nbsp;"title":"알고리즘 공부하기",<br>&nbsp;&nbsp;&nbsp;"order":0,<br>&nbsp;&nbsp;&nbsp;"completed":false,<br>&nbsp;&nbsp;&nbsp;"url":"http://localhost:8080/1"<br>}|
 |GET|/{:id}|todo 항목 조회|{<br>&nbsp;&nbsp;&nbsp;"title" : "반복문 공부하기"<br>}|{<br>&nbsp;&nbsp;&nbsp;"id":1,<br>&nbsp;&nbsp;&nbsp;"title":"반복문 공부하기",<br>&nbsp;&nbsp;&nbsp;"order":0,<br>&nbsp;&nbsp;&nbsp;"completed":false,<br>&nbsp;&nbsp;&nbsp;"url":"http://localhost:8080/1"<br>}|
 |DELETE|/|전체 todo 리스트 삭제|-|200|
-|DELETE|/{:id}|todo 항목 삭제|-|200|
+|DELETE|/{:id}|todo 항목 삭제|-|200|  
+
+## 구동화면
+![구동화면](https://user-images.githubusercontent.com/53508659/124847770-873f4c80-dfd6-11eb-97f3-309d01de6431.PNG)
