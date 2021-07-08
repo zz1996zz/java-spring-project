@@ -1,6 +1,5 @@
-package com.example.restaurant.wishlist.entity;
+package com.example.restaurant.wishlist.dto;
 
-import com.example.restaurant.db.MemoryDbEntity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -12,8 +11,9 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @Data
 @EqualsAndHashCode(callSuper = false)
-public class WishListEntity extends MemoryDbEntity { // view 에 출력 될 항목들이다.
+public class WishListDto { // WishListEntity 에 직접 접근하는 것은 데이터를 손상 시킬 수 있기 때문에 새로 만들어주었다.
 
+    private Integer index;
     private String title;                   // 음식명, 장소명
     private String category;                // 카테고리
     private String address;                 // 주소

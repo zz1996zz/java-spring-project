@@ -6,16 +6,16 @@ import java.util.Optional;
 
 abstract public class MemoryDbRepositoryAbstract<T extends MemoryDbEntity> implements MemoryDbRepositoryIfs<T>{
 
-    private final List<T> db = new ArrayList<>();
+    private final List<T> db = new ArrayList<>(); // 데이터를 저장하는 db 역할을 한다.
     private int index = 0;
 
     @Override
-    public Optional<T> findById(int index) {
+    public Optional<T> findById(int index) { // db 에 있는 데이터의 index 와 입력해준 index 를 비교하여 찾아준다.
         return db.stream().filter(it -> it.getIndex() == index).findFirst();
     }
 
     @Override
-    public T save(T entity) {
+    public T save(T entity) { // db 에 있는 데이터의 index 와 입력해준 entity 의 index 를 비교하여 데이터가 db에 있는지 없는지 확인 후 작업한다.
 
         var optionalEntity = db.stream().filter(it -> it.getIndex() == entity.getIndex()).findFirst();
 
@@ -47,7 +47,7 @@ abstract public class MemoryDbRepositoryAbstract<T extends MemoryDbEntity> imple
     }
 
     @Override
-    public List<T> listAll() {
+    public List<T> findAll() {
         return db;
     }
 }
