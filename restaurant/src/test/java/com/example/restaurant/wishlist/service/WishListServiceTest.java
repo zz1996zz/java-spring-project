@@ -1,5 +1,6 @@
 package com.example.restaurant.wishlist.service;
 
+import com.example.restaurant.naver.NaverClient;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +12,9 @@ public class WishListServiceTest {
     @Autowired
     private WishListService wishListService;
 
+    @Autowired
+    private NaverClient naverClient;
+
     @Test
     public void searchTest(){
 
@@ -19,4 +23,5 @@ public class WishListServiceTest {
         System.out.println(result);
         Assertions.assertNotNull(result);
     }
+
 }
