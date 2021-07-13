@@ -12,6 +12,13 @@
 * API를 확인할 때 swagger 기능을 활용하였다.
 
 ## 구동화면
-![1](https://user-images.githubusercontent.com/53508659/124919932-bf27ad80-e031-11eb-86e5-562b5eedb1f1.PNG)
-![2](https://user-images.githubusercontent.com/53508659/124919961-c77fe880-e031-11eb-8dc3-8e7bd4cf7563.PNG)
-![3](https://user-images.githubusercontent.com/53508659/124920062-e3838a00-e031-11eb-9496-925fd01a15e7.PNG)
+![1](https://user-images.githubusercontent.com/53508659/124919932-bf27ad80-e031-11eb-86e5-562b5eedb1f1.PNG)  
+처음 실행 화면 이다. 검색창에는 기본값으로 '갈비집'이 되어있다.  
+
+![2](https://user-images.githubusercontent.com/53508659/124919961-c77fe880-e031-11eb-8dc3-8e7bd4cf7563.PNG)  
+검색창에 원하는 맛집을 입력한 후, 검색 버튼을 클릭하면 맛집 중 하나가 출력되어 나온다. 홈페이지 버튼을 누르면 맛집의 홈페이지로 이동된다.  
+
+![3](https://user-images.githubusercontent.com/53508659/124920062-e3838a00-e031-11eb-9496-925fd01a15e7.PNG)  
+나만의 맛집리스트에 추가하고싶은 맛집이 생기면 위시리스트 추가 버튼을 클릭하면 된다. 그러면 나만의 맛집리스트에 맛집이 추가된다.  
+방문 추가 버튼을 클릭하면 방문횟수가 카운트되어 숫자가 올라간다.  
+나만의 맛집리스트에서 삭제하고 싶으면 위시리스트 삭제 버튼을 클릭하면 된다.
