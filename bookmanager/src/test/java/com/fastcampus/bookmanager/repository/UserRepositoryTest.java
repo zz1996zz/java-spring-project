@@ -1,11 +1,8 @@
 package com.fastcampus.bookmanager.repository;
 
-import com.fastcampus.bookmanager.domain.User;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 class UserRepositoryTest {
@@ -15,9 +12,7 @@ class UserRepositoryTest {
 
     @Test
     void crud(){
-        userRepository.save(new User());
-        userRepository.save(new User());
+        userRepository.findAll().forEach(System.out::println);
 
-        System.out.println(">>> " + userRepository.findAll());
     }
 }
