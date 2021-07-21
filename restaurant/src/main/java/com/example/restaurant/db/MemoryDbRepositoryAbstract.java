@@ -27,6 +27,7 @@ abstract public class MemoryDbRepositoryAbstract<T extends MemoryDbEntity> imple
             return entity;
         }else{
             // db 에 이미 데이터가 있는 경우
+            // entity를 업데이트 해줘야 하기 때문에 기존에 있던 entity에서 index를 가져와서 새로운 entity에 저장해주고, 기존 entity는 삭제한다.
             var preIndex = optionalEntity.get().getIndex();
             entity.setIndex(preIndex);
 
@@ -41,7 +42,7 @@ abstract public class MemoryDbRepositoryAbstract<T extends MemoryDbEntity> imple
 
         var optionalEntity = db.stream().filter(it -> it.getIndex() == index).findFirst();
 
-        if(optionalEntity.isPresent()){
+        if(optionalEntity.isPresent()){ // isPresent() : 저장된 값이 존재하면 true를 반환하고, 값이 존재하지 않으면 false를 반환함.
             db.remove(optionalEntity.get());
         }
     }

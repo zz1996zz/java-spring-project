@@ -56,7 +56,7 @@ public class WishListService {
             }
         }
 
-        return new WishListDto();
+        return new WishListDto(); // 지역검색 결과가 없으면 빈 Dto를 반환한다.
     }
 
     public WishListDto add(WishListDto wishListDto) { // 위시리스트를 추가하는 메소드
