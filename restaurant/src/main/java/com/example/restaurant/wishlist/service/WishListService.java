@@ -80,7 +80,7 @@ public class WishListService {
         entity.setVisitCount(wishListDto.getVisitCount());
         entity.setLastVisitDate(wishListDto.getLastVisitDate());
 
-        return entity;
+        return entity;  
     }
 
     private WishListDto entityToDto(WishListEntity wishListEntity){
