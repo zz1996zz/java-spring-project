@@ -1,30 +1,30 @@
 package com.fastcampus.bookmanager.domain;
 
 import com.fastcampus.bookmanager.domain.listener.Auditable;
-import lombok.*;
-import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import java.time.LocalDateTime;
 
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-@RequiredArgsConstructor
 @Entity
+@NoArgsConstructor
+@Data
 @ToString(callSuper = true)
 @EqualsAndHashCode(callSuper = true)
-public class User extends BaseEntity implements Auditable {
+public class Book extends BaseEntity implements Auditable {
 
     @Id
     @GeneratedValue
     private Long id;
 
-    @NonNull
     private String name;
 
-    @NonNull
-    private String email;
+    private String author;
 
 //    private LocalDateTime createdAt;
 //    private LocalDateTime updatedAt;
