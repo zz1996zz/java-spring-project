@@ -26,6 +26,9 @@ public class User extends BaseEntity implements Auditable {
     @NonNull
     private String email;
 
+    @Enumerated(value = EnumType.STRING)
+    private Gender gender;
+
 //    private LocalDateTime createdAt;
 //    private LocalDateTime updatedAt;
 }
