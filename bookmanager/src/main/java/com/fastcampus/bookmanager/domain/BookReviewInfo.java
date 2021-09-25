@@ -14,17 +14,15 @@ import javax.persistence.Id;
 @Data
 @ToString(callSuper = true)
 @EqualsAndHashCode(callSuper = true)
-public class Book extends BaseEntity {
+public class BookReviewInfo extends BaseEntity{
 
     @Id
     @GeneratedValue
     private Long id;
 
-    private String name;
+    private Long bookId;
 
-    private String category;
+    private float averageReviewScore;
 
-    private Long authorId;
-
-    private Long publisherId;
+    private int reviewCount;
 }

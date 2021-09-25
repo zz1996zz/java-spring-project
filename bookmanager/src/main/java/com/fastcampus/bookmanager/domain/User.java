@@ -1,11 +1,8 @@
 package com.fastcampus.bookmanager.domain;
 
-import com.fastcampus.bookmanager.domain.listener.Auditable;
 import lombok.*;
-import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
-import java.time.LocalDateTime;
 
 @Data
 @NoArgsConstructor
@@ -14,7 +11,7 @@ import java.time.LocalDateTime;
 @Entity
 @ToString(callSuper = true)
 @EqualsAndHashCode(callSuper = true)
-public class User extends BaseEntity implements Auditable {
+public class User extends BaseEntity {
 
     @Id
     @GeneratedValue
@@ -28,7 +25,4 @@ public class User extends BaseEntity implements Auditable {
 
     @Enumerated(value = EnumType.STRING)
     private Gender gender;
-
-//    private LocalDateTime createdAt;
-//    private LocalDateTime updatedAt;
 }
