@@ -138,7 +138,7 @@ class UserRepositoryTest {
 
         userRepository.save(user);
 
-//        userHistoryRepository.findAll().forEach(System.out::println);
+        userHistoryRepository.findAll().forEach(System.out::println);
 
         user.setName("daniel");
         userRepository.save(user);
@@ -153,5 +153,7 @@ class UserRepositoryTest {
 
         List<UserHistory> result = userRepository.findByEmail("daniel@fastcampus.com").getUserHistories();
         result.forEach(System.out::println);
+
+        System.out.println("UserHistory.getUser() : " + userHistoryRepository.findAll().get(0).getUser());
     }
 }
